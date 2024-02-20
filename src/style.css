@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(25, 25, 25);
+    color: rgb(255, 255, 255);
+}
+
+.header {
+    /* border: solid 2px red; */
+    width: 80%;
+    height: 80px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 40px;
+    padding-right: 10px;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.header>input {
+    height: 4vh;
+    /* width: min(300px, 25vw); */
+    width: 20vw;
+    border-radius: 2vh;
+    padding-left: 1vw;
+    background-color: rgb(52, 52, 52);
+}
+
+.table-container {
+    width: 80%;
+    margin-left: 10%;
+    /* border: solid 2px blue; */
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 4fr 25fr 18fr 26fr 36fr;
+    /* grid-template-columns:4fr 23fr 23fr 26fr 36fr; */
+    /* grid-template-columns:0.3fr 3fr 3fr 3fr 3fr; */
+    /* border: solid 2px green; */
+    padding: 15px 8px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    background-color: rgb(25, 25, 25);
+}
+
+.justify-end {
+    justify-self: end;
+    /* padding-left: 10px; */
+}
+
+/* coin  component */
+
+.coin {
+    display: flex;
+    align-items: center;
+}
+
+.coin>img {
+    height: 23px;
+}
+
+hr {
+    color: rgb(170, 19, 19);
+}
+
+h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: rgb(0, 198, 0);
+}

@@ -1,0 +1,25 @@
+@media screen and (max-width: 800px) {
+    .header {
+        border: dotted 2px red;
+        position: fixed;
+        flex-direction: column;
+        background-color: white;
+        width: 100vw;
+        margin: 0;
+        z-index: 2;
+        top: 0%;
+        left: 0%;
+    }
+
+    .header>input {
+        width: 250px;
+    }
+
+    .table-container {
+        width: 1100px;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    /* TODO: implement scrolling */
+}
