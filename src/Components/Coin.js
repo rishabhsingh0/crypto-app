@@ -23,6 +23,5 @@ const Coin = (props) => {
             <hr />
         </div>
     )
-    // <p className="coin-volume">Rs.{props.volume.toLocaleString()}</p>
 }
 export default Coin

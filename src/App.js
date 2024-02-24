@@ -7,20 +7,26 @@ import Coin from './Components/Coin'
 
 
 const App = () => {
+	// state to store coin data
 	const [coinData, setCoinData] = React.useState([])
 
+	// fetching data
 	React.useEffect(() => {
 		fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=INR&order=market_cap_desc&per_page=100&page=1&sparkline=false')
 			.then(response => response.json())
 			.then(result => setCoinData(result))
 	}, [])
 
+	// state to store search values
 	const [search, setSearch] = React.useState('')
-	const handleChange = (event) => {
-		setSearch(event.target.value)
-	}
 
-	const filteredCoin = coinData.filter(data => data.name.includes(search))
+	// implementing search
+	const handleChange = (event) => {
+		// console.log(typeof(event), event)
+		setSearch(event.target.value.toLowerCase())
+	}
+	const filteredCoin = coinData.filter(data => data.name.toLowerCase().includes(search))
+
 	return (
 		<div>
 			<div className='header'>
@@ -39,6 +45,7 @@ const App = () => {
 					<h2 className='justify-end'>Market Cap</h2>
 				</div>
 				<hr />
+				{/* displaying results using props */}
 				{filteredCoin.map(coin =>
 					<Coin
 						key={coin.id}
