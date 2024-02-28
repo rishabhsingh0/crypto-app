@@ -37,9 +37,9 @@ const App = () => {
 				<input type='text' placeholder='Search' onChange={handleChange} />
 			</div>
 			<div className='table-container'>
-				<div className='table sticky'>
-					<h2 className='rank'>#</h2>
-					<h2>Coin</h2>
+				<div className='table sticky-top'>
+					<h2 className='rank sticky-left'>#</h2>
+					<h2 className='coin sticky-left'>Coin</h2>
 					<h2 className='justify-end'>Price</h2>
 					<h2 className='justify-end'>24h</h2>
 					<h2 className='justify-end'>Market Cap</h2>

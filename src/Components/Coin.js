@@ -6,8 +6,8 @@ const Coin = (props) => {
     return (
         <div>
             <div className="coin-container table">
-                <p className='rank'>{props.rank}</p>
-                <div className="coin">
+                <p className='rank sticky-left'>{props.rank}</p>
+                <div className="coin sticky-left">
                     <img src={props.image} alt="crypto" />
                     <h1>{props.name}</h1>
                     <h3 className="coin-symbol">{props.symbol.toUpperCase()}</h3>
